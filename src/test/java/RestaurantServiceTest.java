@@ -31,14 +31,14 @@ class RestaurantServiceTest {
     }
     //<<<<<<<<<<<<<<<<<<<<SEARCHING>>>>>>>>>>>>>>>>>>>>>>>>>>
     
-//    @Test
-//    public void search_restaurant_by_menu_item_should_return_null_if_menu_exists_in_atleast_one_restaurant() {
-//    	List<Restaurant> restaurants = new ArrayList<>();
-//    	restaurants = service.getResturantsByMenuItem("DAM DAM ");
-//    	System.out.println(restaurants);
-//    	assertNull(restaurants);
-//    }
-//
+    @Test
+    public void search_restaurant_by_menu_item_should_return_null_if_menu_exists_in_atleast_one_restaurant() {
+    	List<Restaurant> restaurants = new ArrayList<>();
+    	restaurants = service.getResturantsByMenuItem("DAM DAM ");
+    	System.out.println(restaurants);
+    	assertNull(restaurants);
+    }
+
 
 
     //>>>>>>>>>>>>>>>>>>>>>>ADMIN: ADDING & REMOVING RESTAURANTS<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
