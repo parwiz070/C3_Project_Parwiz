@@ -20,22 +20,22 @@ public class RestaurantService {
 
     // new feature implemented
     // user can search for restaurants which have a specific menu item
-//	public List<Restaurant> getResturantsByMenuItem(String itemName){
-//
-//    	List<Restaurant> found = null;
-//    	for(Restaurant restuarant : restaurants ) {
-//	    	//if(restuarant.getMenu().size() > 0) {
-//    		List<Item> menu = restuarant.getMenu();
-//	    		for(Item itm : menu) {
-//	    			if(itm.getName().equals(itemName)) {
-//	    				found.add(restuarant);
-//	    			}
-//	    		}
-//	    	//}
-//    	}
-//
-//    	return found;
-//    }
+	public List<Restaurant> getResturantsByMenuItem(String itemName){
+
+    	List<Restaurant> found = null;
+    	for(Restaurant restuarant : restaurants ) {
+	    	//if(restuarant.getMenu().size() > 0) {
+    		List<Item> menu = restuarant.getMenu();
+	    		for(Item itm : menu) {
+	    			if(itm.getName().equals(itemName)) {
+	    				found.add(restuarant);
+	    			}
+	    		}
+	    	//}
+    	}
+
+    	return found;
+    }
 
     public Restaurant addRestaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         Restaurant newRestaurant = new Restaurant(name, location, openingTime, closingTime);
